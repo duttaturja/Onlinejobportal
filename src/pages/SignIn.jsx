@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./SignIn.css";
 
 const SignIn = () => {
-  const { role, setRole } = useState("");
+  const [ role, setRole ] = useState("");
   return (
     <div className="Signup_container">
       <div className="Signup_form">
@@ -27,7 +27,6 @@ const SignIn = () => {
                   type="button"
                   className="Signup_role_items"
                   onClick={() => {
-                    console.log("turja");
                     setRole("Job Seeker");
                   }}
                 >
